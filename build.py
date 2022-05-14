@@ -62,21 +62,6 @@ pages = [
 
 # 2.3 phase 3
 
-start = open("templates/topAboutMe.html").read()
-end = open("templates/bottomAboutMe.html").read()
-full = start + end
-open("baseAboutMe.html", "w+").write(full)
-
-start = open("templates/topProjects.html").read()
-end = open("templates/bottomProjects.html").read()
-full = start + end
-open("baseProjects.html", "w+").write(full)
-
-start = open("templates/topBlog.html").read()
-end = open("templates/bottomBlog.html").read()
-full = start + end
-open("baseBlog.html", "w+").write(full)
-
 start = open("templates/topindex.html").read()
 end = open("templates/bottomindex.html").read()
 full = start + end
