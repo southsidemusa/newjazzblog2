@@ -1,7 +1,7 @@
 print('static site') 
 
 # Reads in the top.html 
- 
+
 print('reading in html variables')
 
 top_html = open('./templates/topindex.html').read()
@@ -26,7 +26,7 @@ print(combined_html)
 # Writes the new index.html file to a brand new file
 # in the same directory
 
-open('index.html','w+').write(combined_html)
+open('Index.html','w+').write(combined_html)
 
 
 print('static site') 
