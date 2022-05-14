@@ -1,20 +1,4 @@
 
-def html_site():
-   top = open("templates/topAboutMe.html").read()
-top = open("templates/topBlog.html").read()
-top = open("templates/topProjects.html").read()
-top = open("templates/topindex.html").read()
-about_me = open("content/AboutMe.html").read()
-blog = open("content/Blog.html").read()
-projects = open("content/Projects.html").read()
-index = open("content/index.html").read()
-templates = open("templates/bottomAboutMe.html").read()
-templates = open("templates/bottomBlog.html").read()
-templates = open("templates/bottomProjects.html").read()
-templates = open("templates/bottomindex.html").read() 
-html_site = templates + about_me + blog + projects + templates
-print(html_site)
-
 
 # 2.1 phase 1
 def main():
