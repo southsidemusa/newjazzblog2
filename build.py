@@ -1,5 +1,4 @@
 
-
 # 2.1 phase 1
 def main():
     top = open("templates/topAboutMe.html").read()
@@ -23,22 +22,22 @@ if main =="__main__":
 pages = [
     {
         "filename": "content/AboutMe.html",
-        "output": "docs/AboutMe.html",
+        "output": "content/AboutMe.html",
         "title": "About Me",
      },
     {
         "filename": "content/Blog.html",
-        "output": "docs/Blog.html",
+        "output": "content/Blog.html",
         "title": "Blog",
      },
      {
         "filename": "content/Projects.html",
-        "output": "docs/Projects.html",
+        "output": "content/Projects.html",
         "title": "Projects",
      },
      {
         "filename": "content/index.html",
-        "output": "docs/index.html",
+        "output": "content/index.html",
         "title": "index",
      },
      
