@@ -1,7 +1,7 @@
 print('static site') 
 
 # Reads in the top.html 
-
+ 
 print('reading in html variables')
 
 top_html = open('./templates/topindex.html').read()
