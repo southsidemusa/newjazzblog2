@@ -26,7 +26,7 @@ print(combined_html)
 # Writes the new index.html file to a brand new file
 # in the same directory
 
-open('Index.html','w+').write(combined_html)
+open('index.html','w+').write(combined_html)
 
 
 print('static site') 
