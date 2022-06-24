@@ -44,39 +44,39 @@ pages = [
 
 # 2.3 phase 3
 
-start = open("templates/topAboutMe.html").read()
-end = open("templates/bottomAboutMe.html").read()
-full = start + end
-open("baseAboutMe.html", "w+").write(full)
+# start = open("templates/topAboutMe.html").read()
+# end = open("templates/bottomAboutMe.html").read()
+# full = start + end
+# open("baseAboutMe.html", "w+").write(full)
 
-start = open("templates/topProjects.html").read()
-end = open("templates/bottomProjects.html").read()
-full = start + end
-open("baseProjects.html", "w+").write(full)
+# start = open("templates/topProjects.html").read()
+# end = open("templates/bottomProjects.html").read()
+# full = start + end
+# open("baseProjects.html", "w+").write(full)
 
-start = open("templates/topBlog.html").read()
-end = open("templates/bottomBlog.html").read()
-full = start + end
-open("baseBlog.html", "w+").write(full)
+# start = open("templates/topBlog.html").read()
+# end = open("templates/html.bottomBlog").read()
+# full = start + end
+# open("baseBlog.html", "w+").write(full)
 
-start = open("templates/topindex.html").read()
-end = open("templates/bottomindex.html").read()
-full = start + end
-open("baseindex.html", "w+").write(full)
+# start = open("templates/topindex.html").read()
+# end = open("templates/bottomindex.html").read()
+# full = start + end
+# open("baseindex.html", "w+").write(full)
 
 
 # 2.4 phase 4
 
-def apply_template(content):
+# def apply_template(content):
 
-    return results
+#     return results
 
-def main():
-    content = open("docs/baseindex.html")
-    content = open("docs/baseAboutMe.html")
-    content = open("docs/baseProjects.html")
-    content = open("docs/baseBlog.html")
-    resulting_html_for_base = apply_template(content)
+# def main():
+#     content = open("docs/baseindex.html")
+#     content = open("docs/baseAboutMe.html")
+#     content = open("docs/baseProjects.html")
+#     content = open("docs/baseBlog.html")
+#     resulting_html_for_base = apply_template(content)
     
 # 2.5 phase 5
 
