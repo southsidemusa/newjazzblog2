@@ -20,23 +20,19 @@
 
 pages = [
     {
-        "filename": "content/AboutMe.html",
-        "output": "docs/AboutMe.html",
+        "filename": "AboutMe.html",
         "title": "About Me",
      },
     {
-        "filename": "content/Blog.html",
-        "output": "docs/Blog.html",
+        "filename": "Blog.html",
         "title": "Blog",
      },
      {
-        "filename": "content/Projects.html",
-        "output": "docs/Projects.html",
+        "filename": "Projects.html",
         "title": "Projects",
      },
      {
-        "filename": "content/index.html",
-        "output": "docs/index.html",
+        "filename": "index.html",
         "title": "index",
      },
      
@@ -80,21 +76,22 @@ pages = [
     
 # 2.5 phase 5
 
-def apply_template(value, title):
-    template = open("docs/baseindex.html").read()
-    template = open("docs/baseProjects.html").read()
-    template = open("docs/baseBlog.html").read()
-    template = open("docs/baseAboutMe.html").read()
-    index_html = template.replace("{{content}}", value)
-    title_replace = index_html.replace("{{my_blog}}", title)
-    return (index_html)
+def apply_template(content, title):
+    top = open("templates/top.html").read()
+    bottom = open("templates/bottom.html").read()
+    # template = open("docs/baseBlog.html").read()
+    # template = open("docs/baseAboutMe.html").read()
+    # index_html = template.replace("{{content}}", value)
+    title_replace = top.replace("{{ title }}", title)
+    rendered_page = top + content + bottom
+    return (rendered_page)
    
 def main():
     for value in pages:
-        content = open(value["filename"]).read()
+        content = open("content/" + value["filename"]).read()
         title = value["title"]
         resulting_html_for_index = apply_template(content, title)
-        open(value["output"], "w+").write(resulting_html_for_index)
+        open("docs/" + value["filename"], "w+").write(resulting_html_for_index)
     
 if __name__ == "__main__":
     main()
